@@ -35,6 +35,7 @@ plugins:
 # Can also add content within as desired
 header_pages:
   - about.md
+  - test_page.md
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
