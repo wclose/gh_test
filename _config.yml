@@ -30,11 +30,12 @@ theme: minima
 #   - jekyll-feed
 #   - jekyll-seo-tag
 
+# Using header_pages here causes issues with gh-pages (theme won't build)
 # Adding new page
 # To do so, you need to first create a new .md file and adjust the permalink/title in the yaml
 # Can also add content within as desired
-# header_pages:
-#   - about.md
+header_pages:
+  - about.md
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
