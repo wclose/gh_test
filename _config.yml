@@ -23,7 +23,7 @@ twitter_username: WilliamLClose
 github_username:  wclose
 
 # Build settings
-# markdown: kramdown
+markdown: kramdown
 # For information on how to convert from gem-based themes to regular themes (i.e. keep thing static), see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 theme: minima
 # plugins:
