@@ -1,3 +1,14 @@
+## Based on example from [matthiaslischka](https://github.com/matthiaslischka/matthiaslischka.at)
+
+Test page for creating a website with Github Pages [wclose.github.io/gh_test/](https://wclose.github.io/gh_test/)
+
+Example of denoting theme being used:
+Based on [Jekyll](https://jekyllrb.com/) and the [Jekyll-Uno theme](https://github.com/joshgerdes/jekyll-uno) linked via [jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme).
+
+Showing the build status using Travis CI:
+[![Build Status](https://travis-ci.com/wclose/gh_test.svg?branch=master)](https://travis-ci.com/wclose/gh_test)
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/wclose/gh_test/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
