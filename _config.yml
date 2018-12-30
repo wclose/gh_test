@@ -23,12 +23,12 @@ twitter_username: WilliamLClose
 github_username:  wclose
 
 # Build settings
-markdown: kramdown
+# markdown: kramdown
 # For information on how to convert from gem-based themes to regular themes (i.e. keep thing static), see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+# plugins:
+#   - jekyll-feed
+#   - jekyll-seo-tag
 
 # Adding new page
 # To do so, you need to first create a new .md file and adjust the permalink/title in the yaml
