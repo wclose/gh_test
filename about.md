@@ -1,6 +1,7 @@
 ---
 layout: default
-title : About
+title: About
+permalink: /about/
 ---
 
 This is where I would put info about the me/website.
