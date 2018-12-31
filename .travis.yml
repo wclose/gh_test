@@ -1,10 +1,13 @@
 # Setup based on https://jekyllrb.com/docs/continuous-integration/travis-ci/
 
+# NOTE: if following the above instructions ***DO NOT*** add 
+# `exclude: [vendor]` to _config.yml. It is already done by default and 
+# will break testing pipeline (appears to negate default exclusion)
+
 language: ruby
 rvm:
   - 2.5.3
 
-# script: bundle exec jekyll build
 script: bundle exec jekyll build && bundle exec htmlproofer ./_site 
 # Basic test (does it build):
 # `jekyll build` builds a static site once for testing (`jekyll serve`
