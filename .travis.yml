@@ -5,7 +5,8 @@ rvm:
   - 2.5.3
 
 install: gem install jekyll html-proofer
-script: bundle exec jekyll build && bundle exec htmlproofer ./_site 
+script: bundle exec jekyll build
+# script: bundle exec jekyll build && bundle exec htmlproofer ./_site 
 # Basic test (does it build):
 # `jekyll build` builds a static site once for testing (`jekyll serve`
 # builds static site that updates as changes are made for easier viewing)
