@@ -40,8 +40,8 @@ header_pages:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-exclude:
-  - [vendor] # prevents Jekyll from reading bundled gems in vendor dir during Travis CI testing
+# exclude:
+#   - vendor # prevents Jekyll from reading bundled gems in vendor dir during Travis CI testing
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules
