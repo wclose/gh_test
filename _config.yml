@@ -25,10 +25,17 @@ github_username:  wclose
 # Build settings
 markdown: kramdown
 # For information on how to convert from gem-based themes to regular themes (i.e. keep thing static), see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-theme: minima
+# theme: minima
+# Setting a remote theme
+# Followed option #2 from http://matthiaslischka.at/2018/12/03/github-jekyll-best-practice/
+# Forked minimal-mistakes to my own account then set as remote-theme here
+remote_theme: wclose/minimal-mistakes
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-include-cache
+  - jekyll-remote-theme
 
 # Adding new page
 # To do so, you need to first create a new .md file and adjust the permalink/title in the yaml
