@@ -7,6 +7,8 @@ gem "github-pages", group: :jekyll_plugins
 gem "html-proofer"
 # Adding ability to use a remote theme
 gem "jekyll-remote-theme"
+# Adding include-cache for use with remote-theme in _config.yml file
+gem "jekyll-include-cache"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
