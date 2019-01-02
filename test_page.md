@@ -1,7 +1,6 @@
 ---
 layout: page # adjusts the format of the site page according to what's available in the `_layout/` directory
 title: Test Page # This is what will appear if included in header
-permalink: /test_page/ # changes page address from "website.com/test_page.html" to "website.com/test_page/"
 ---
 
 

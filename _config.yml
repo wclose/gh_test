@@ -37,6 +37,11 @@ header_pages:
   - about.md
   - test_page.md
 
+# Setting formatting for URL
+# Avoids needing to set permalinks in the front matter for individual pages
+# More info can be found here https://jekyllrb.com/docs/permalinks/
+permalink: /:categories/:title:output_ext
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
