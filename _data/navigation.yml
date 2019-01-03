@@ -1,0 +1,9 @@
+main:
+  - title: "About"
+    url: /about/
+  - title: "Test"
+    url: /test/
+  - title: "Testing"
+    url: /testing/
+  - title: "External Link"
+    url: https://google.com
