@@ -1,8 +1,9 @@
 ---
-layout: default # adjusts the format of the site page according to what's available in the `_layout/` directory
-title: Test Page # This is what will appear if included in header
+title: "Test"
+layout: single
+permalink: /test/
+author_profile: true
 ---
-
 
 
 Let's see if this thing is working.
