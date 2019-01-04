@@ -1,6 +1,7 @@
 ---
 title: "Testing"
 permalink: /testing/
+layout: single
 author_profile: true
 toc: true
 toc_label: "Table of Contents"
