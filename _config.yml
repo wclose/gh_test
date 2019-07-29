@@ -111,19 +111,19 @@ author:
   links:
     # See https://fontawesome.com/ for more information on formatting, etc.
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+      icon: "far fa-fw fa-envelope"
       url: mailto:william.l.close@gmail.com
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fab fa-fw fa-twitter"
       url: "https://twitter.com/WilliamLClose"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
+      icon: "fab fa-fw fa-linkedin-in"
       url: "https://www.linkedin.com/in/williamlclose/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/wclose"
     - label: "Google Scholar"
-      icon: "ai ai-google-scholar"
+      icon: "ai fa-fw ai-google-scholar"
       url: "https://scholar.google.com/citations?hl=en&user=BOXY7bEAAAAJ"
     - label: "ORCID"
       icon: "ai fa-fw ai-orcid"
