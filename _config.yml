@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Website Test Page"
+title                    : "William L. Close"
 title_separator          : "-"
 name                     : "William L. Close"
 description              : "This is Will's test site to see if he can make things work."
@@ -80,7 +80,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : 
+  username               : WilliamLClose
 facebook:
   username               :
   app_id                 :
@@ -105,22 +105,30 @@ analytics:
 author:
   name             : "William L. Close"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  bio              : "Postdoctoral Fellow specializing in bioinformatics and virology."
+  location         : "Ann Arbor, MI, USA"
   email            :
   links:
+    # See https://fontawesome.com/ for more information on formatting, etc.
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:close.will@gmail.com
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: mailto:william.l.close@gmail.com
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/WilliamLClose"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/williamlclose/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/wclose"
+    - label: "Google Scholar"
+      icon: "ai ai-google-scholar"
+      url: "https://scholar.google.com/citations?hl=en&user=BOXY7bEAAAAJ"
+    - label: "ORCID"
+      icon: "ai fa-fw ai-orcid"
+      url: "https://orcid.org/0000-0001-5284-5521"
+
 
 
 # Site Footer
