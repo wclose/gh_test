@@ -10,15 +10,15 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
+# Theme                  : "minimal-mistakes-jekyll"
 remote_theme             : "wclose/minimal-mistakes"
-minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "custom" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "William L. Close, Ph.D."
+title                    : "WILLIAM L. CLOSE, PH.D. | VIROLOGY, BIOINFORMATICS, & DATA SCIENCE"
 title_separator          : "-"
-subtitle                 : "Virology, Bioinformatics, & Data Science"
+subtitle                 : #"Virology, Bioinformatics, & Data Science"
 name                     : "William L. Close, Ph.D."
 description              : "William L. Close, Ph.D."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -284,7 +284,7 @@ defaults:
       read_time: true
       comments: # true
       share: true
-      related: true
+      related: # true
 
 
 
