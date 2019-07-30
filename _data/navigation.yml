@@ -1,11 +1,10 @@
 main:
   - title: "About"
     url: "/about/"
-  - title: "Test Page"
-    url: "/test_page/"
   - title: "Posts"
-    url: "/testing/"
+    url: "/year-archive/"
   - title: "Publications"
     url: "https://scholar.google.com/citations?hl=en&user=BOXY7bEAAAAJ"
   - title: "Resume"
     url: "/assets/resume/2019-05-01-Resume.pdf"
+    
