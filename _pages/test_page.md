@@ -32,7 +32,6 @@ This is another way to comment. Need to use this if trying to comment something 
 To bring in material from a separate document, use `{% include_relative PATH/FILENAME %}`. Can alternatively use {% include FILENAME %} that will incorporate a file so long as it's in `_include/` dir. Should work for `.md` and `.html`. If using, need to remove yaml header from file
 {% endcomment %}
 
-{% include_relative about.md %}
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
