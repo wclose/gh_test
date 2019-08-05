@@ -1,7 +1,10 @@
 ---
-layout: single
-author_profile: true
+layout: splash
+classes: wide
+author_profile: false
 permalink: /
+header:
+  image: /assets/images/tessellation1280x720.png
 ---
 
 ## About Me
