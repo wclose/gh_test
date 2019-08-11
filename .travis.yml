@@ -1,9 +1,10 @@
 language: ruby
 rvm:
-- 2.5.3
+  - 2.5.3
 script:
-- bundle exec jekyll build
-- bundle exec htmlproofer ./_site --http-status-ignore 999
+  - echo $JEKYLL_GITHUB_TOKEN
+  - bundle exec jekyll build
+  - bundle exec htmlproofer ./_site --http-status-ignore 999
 branches:
   only:
   - master
@@ -11,7 +12,7 @@ env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   matrix:
-    secure: JxGcemiAGbNOHXljR99U7g5LC4Q+zWGwc3v+/asfuXD+P2m23maEdFp6UtBMnJPU1HTIt58OT9V6PXJd5QUE579vfoEfrIIPu4ttfdNT9cg7cyV5eJKRiNAlTJAxHYRddpovquxdukNKTOohFOolLwsRiHDSXbtzySPGXmONXU1qs3W7eHOvQiJYX6LW4r91uV8glUqM1OQ/20ypoXD4qvbJALP689jpKYK0hjB7AM3xVH8ITE3o9UQF/Ibsm+UFAvndNzIY8SBnrsnVposHqHyelxCQVYvmHoVyP2DuAxRBDA2z2nIZv6dF8PeTtaTnCNzGlytzD+GrbG5f3ZiIHakg81tJt7SZ1fO0pg/Fz5XPcyGqUkOk1NygRmoCOJORvFmkvt5dSd2NNbJK/MP+B1Y81xuMY02Routl0Zh9neI5Mn7sQ4MMxadD+dcUcI22VjD2l7pgD+rxU7XwfROClPPaZOca0IersXo7QpTiWPQHJn7M21LC7Qo5ddrNR8dnMBTszSrX0srkKLtI5VrJNmBc3a1y7GWX7UU1+ZSgN8x7dHBetBep6qsJA0n8rzl5PC7n79rsPHRTWuagnP1Op72Vijvx1A8NGLZ8o5FDww6p0vwHAC9NG2tKZkjTX5ctgq3sajaghwJx5hNnuQ0+MTVvT6bCx3XN4R2+Dm24eG4=
+  - secure: 2Gn7o29wvJCDwv+Vye1QwBUo9jlEPYXG1vy/MiRuGiWjy33LYYE39+2qxzcqUTwNuqkqsE/+aSRWlTbmfxDMjs81Wc8KlxipESpOJCjB2KHDezSlt95ySqNXOPcpQbmJEObILhJY881XkXl4OMELHdCpYtSTqzCpN7xRGi3uCzdyUUREBUH2exuOvmn8nBNno0CbJedRQ9lEcFAJHIkbxZbzaCrlFX+PrkbSImIhO6DEi25OgccR5iR38JElu55NTBLK9GILYPqQAW7oFV+d1nYeONIdtmmfWkwkO6Z12zIgKzJey1sVE3MVvPz+8Tc9plToZk1A1CBSFCeCLhtzzQHGq3s6iTALzuYgeVmj6RDHTO5P2qePwvbcp+zHWl2LuLxj/TIOVLKeqMoZRu15br2YAEaW6NhhoJMOOwuFz4Z3R5Bqr0LaICeMeQnXjyUDR8yT3SW3xVfMxPV80zNMx3LdZEYtb82ww5nqdHpypYvPXwPiaF5F55Xqk356kVpF4df7ZZugrIepz3+c++2g9sRQnwamM6NLwjTdcsKJvOT3aNUeiZ1MCa1Ia4mUALXoGWeCw0fHKwb9AIfwCUE5dJlPeZKIMHnrObRs5jRKEDmjQ1jck1kKpBg4YArSGC3CVruJKS5Ur1fsZvuwAmZLELJnlkeBNK4exJPa0lwU8gw=
 addons:
   apt:
     packages:
