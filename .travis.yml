@@ -21,7 +21,6 @@ notifications:
   email: false
 deploy:
   provider: pages
-  local-dir: ./_site
   target-branch: gh-pages
   skip_cleanup: true
   github_token: $JEKYLL_GITHUB_TOKEN
