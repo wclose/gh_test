@@ -19,3 +19,10 @@ sudo: false
 cache: bundler
 notifications:
   email: false
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $JEKYLL_GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master
