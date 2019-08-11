@@ -2,8 +2,8 @@ language: ruby
 rvm:
 - 2.5.3
 script:
-- bundle exec jekyll build
-- bundle exec htmlproofer ./_site --http-status-ignore 999
+  - bundle exec jekyll build
+  - bundle exec htmlproofer ./_site --http-status-ignore 999
 branches:
   only:
   - master
@@ -19,3 +19,11 @@ sudo: false
 cache: bundler
 notifications:
   email: false
+deploy:
+  provider: pages
+  target-branch: gh-pages
+  skip_cleanup: true
+  github_token: $JEKYLL_GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master
