@@ -1,7 +1,9 @@
 language: ruby
 rvm:
 - 2.5.3
-script: bundle exec jekyll build && bundle exec htmlproofer ./_site
+script: 
+  - bundle exec jekyll build
+  - bundle exec htmlproofer ./_site --http-status-ignore 999
 branches:
   only:
   - master
@@ -15,3 +17,5 @@ addons:
     - libcurl4-openssl-dev
 sudo: false
 cache: bundler
+notifications:
+  email: false
