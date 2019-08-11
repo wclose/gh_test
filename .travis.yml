@@ -1,16 +1,16 @@
 language: ruby
 rvm:
 - 2.5.3
-script: 
-  - bundle exec jekyll build
-  - bundle exec htmlproofer ./_site --http-status-ignore 999
+script:
+- bundle exec jekyll build
+- bundle exec htmlproofer ./_site --http-status-ignore 999
 branches:
   only:
   - master
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-  - secure: wAFN22rY01dQ4j/sohdD+aKiXIZQL14e0CDizMwYsQa9WJ11Jl/fz0QWD9eGbl3PYOinbvJQq4r8YPEC3ZguLG8ENH6QN/Xoh+tBibhJ1vTtAJVWc8praU8H69OWt0AJsFYpvKxrMiCmbcmdyExpYKbPh/meoSJCHoFdsLC9767RRiqKLnuFmy7OEEoe7g+D5qi0AnaBco+p103d3jl8SJr45r8TUT8NOy+oqOKyy9BaFibp06c5K8xKlnj27dRtsk/QQTkUk2q6b83D2xrXcetO7yVgTyLPAApDerFOHI4nM0QzLLjJ7izJ7qFisUTYAMQlIOhJycaDxdVL6P+XfFWQhvVRWLqG1CmjpjygIYg3VWQ6l6cmk4pJjVH9IS0P8Vku3QoCHUE19hEu8gl8v619mGiQF4Hoo8rIuVRWfDpNFXovavKfzwJsT98kjXC2cPw9JlbQ+qUpFpZbYLT7+2oVUj+7O7aSOW+w2HppmNwqKI7IkWYZh4t5Y22WMX1tfTrJH3lOCBAG4hZKCmnnTpmZb5cRl7mWJolXpsonM0KCQhBsD4F+jU1oZmOmcMOlkZT+Crzre1YDGOCd4FQuc6+XmHLKg3AuAB0Rv8JIgUosTWjMbvR3xXexDkPMBenqw+71Bpx9ShUzv/9UCiMCMiRDshdR9i8Dcrjr+U+AAcA=
+  - secure: g5zopHptG9uhNfL/TitKXl+i/G5Sqrc0sMSLLS9CtognBAk4IdaGolh6ECjjAlKB/ivMlisgArB33Xtt6Wpubig5oV28Y/B9yXQWHMfClxT8XMp12bPfVIhBWmfa+V+1dAP0OngN7BMqmJQrmYQgoOtlPH4b3yRjde6tbPmfCkcuJcGYT7Xv3RAP09eDeDenLVc+LIsKck10gv5PESfzq0zEX4VEgCPabbhr5XOqbQTF/QXBNdzie7xobIufXljvdgTxXSJ3avN9jtJiK3uHztZqXr0TV20LKS6biOQ39oJk9Qr7oE4rV9bybiPo6ckoaNfNQiMFPJ1WpG+f3IAqhWfji4fuAdHmYxSA27aHeaej2LxQiU2bK3XehLiFd68CZjcvf3U6DWQtwrYlSCxZ98oqrzL9lMQ6729VoF15OccTwPS3s7WKIzaqtPHU+rFykG/wZSPwy1/g5dpwdh3mnThrwXBebvNu8c2WIBqm6lBStB3Ijb1ofQUm7FgJQ6O9JDSA1kF1dnWduKx0FYhjj15JgGNkc5ODWkBYV1WadFxg23XmS7X6eZfDi/P+fHUhY392/4SWFlyQK4q389lHpoVA93Gw3oJZtpeaL+OylnJ9UFKwE+jpyry+0Am8UXQK7qUSQZPyEu3MBh5yg9t/rDgPJh3w6mvEiD2ZqhlNLbY=
 addons:
   apt:
     packages:
@@ -22,7 +22,7 @@ notifications:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $JEKYLL_GITHUB_TOKEN
+  github_token: "$JEKYLL_GITHUB_TOKEN"
   keep_history: true
   on:
     branch: master
