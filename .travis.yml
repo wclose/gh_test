@@ -10,6 +10,7 @@ branches:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - secure: WCIFcLHVxhGQ3T4y7PKyuVZvLvILZJg1JDr8fu7ynovknqvBLZojFlF4krq/OA30ZuCYhIqs2kq2O/14DdBfTttkgw7i3oSDO8v7v0akB1ph0N6npvZTbR6IehiG+NdVR9b7fLDfJYTzgF2upyeFnUWdKGPaz/cgiO1Eq3EL0GXLv8qvjCnqIpVtUdtxrjQULiFzWFeq1KFDgy6WiFFwucr6zFg90PIXyj1qg2DpY0i08ID0pn0is4BykNRITNZQ8WXag7g2Ox6dIkzvceH9XZsw9gKmGh218LOQ+YuEuxGcwhQFHGwRVd9qRrJdcrN96G8P6+jjUTX8Zm/tyM0tMXYjJDNi+rmRPOdQgORSxGSEkqJSEKlQtBkpODMmG4QQFrWblqeGbngJEACJGrt17nF+FoIMnrNR1qggjOghXMIPeHyJxChS64m/kUdPHJkeNCu3YE2UH2mZAd+rG9M3zTpYYD5+DPrTiUXlAS0B57/5RfokVc/HZJDErddrr/YQQokNY0IxUcaEDXIroSeiOxCWwwAdTKn2AGE34+A3kqyfGlD/f+yvmQKlK1ux9GIXIF5NzPpNZZLRbA+h9upQTJeYXF7LEpK+VwXMZhckhuw3XyU9nuyeWjl0V0vIkxBiDk28hnSkptPeENzxg8A1f6he9WOZfr9YtzamtbFmt1M=
 addons:
   apt:
     packages:
@@ -18,11 +19,3 @@ sudo: false
 cache: bundler
 notifications:
   email: false
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: 
-    - secure: WCIFcLHVxhGQ3T4y7PKyuVZvLvILZJg1JDr8fu7ynovknqvBLZojFlF4krq/OA30ZuCYhIqs2kq2O/14DdBfTttkgw7i3oSDO8v7v0akB1ph0N6npvZTbR6IehiG+NdVR9b7fLDfJYTzgF2upyeFnUWdKGPaz/cgiO1Eq3EL0GXLv8qvjCnqIpVtUdtxrjQULiFzWFeq1KFDgy6WiFFwucr6zFg90PIXyj1qg2DpY0i08ID0pn0is4BykNRITNZQ8WXag7g2Ox6dIkzvceH9XZsw9gKmGh218LOQ+YuEuxGcwhQFHGwRVd9qRrJdcrN96G8P6+jjUTX8Zm/tyM0tMXYjJDNi+rmRPOdQgORSxGSEkqJSEKlQtBkpODMmG4QQFrWblqeGbngJEACJGrt17nF+FoIMnrNR1qggjOghXMIPeHyJxChS64m/kUdPHJkeNCu3YE2UH2mZAd+rG9M3zTpYYD5+DPrTiUXlAS0B57/5RfokVc/HZJDErddrr/YQQokNY0IxUcaEDXIroSeiOxCWwwAdTKn2AGE34+A3kqyfGlD/f+yvmQKlK1ux9GIXIF5NzPpNZZLRbA+h9upQTJeYXF7LEpK+VwXMZhckhuw3XyU9nuyeWjl0V0vIkxBiDk28hnSkptPeENzxg8A1f6he9WOZfr9YtzamtbFmt1M=
-  keep_history: true
-  on:
-    branch: master
