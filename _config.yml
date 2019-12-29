@@ -16,9 +16,10 @@ minimal_mistakes_skin    : "custom" # "air", "aqua", "contrast", "dark", "dirt",
 
 # Site Settings
 locale                   : "en-US"
-title                    : "WILLIAM L. CLOSE, PH.D. | VIROLOGY, BIOINFORMATICS, & DATA SCIENCE"
+logo                     : "assets/images/logo.png"
+title                    : "WILLIAM L. CLOSE, PH.D."
 title_separator          : "-"
-subtitle                 : #"Virology, Bioinformatics, & Data Science"
+subtitle                 : "VIROLOGY, BIOINFORMATICS, & DATA SCIENCE"
 name                     : "William L. Close"
 description              : "William L. Close, Ph.D."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
