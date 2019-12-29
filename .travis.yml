@@ -1,0 +1,29 @@
+language: ruby
+rvm:
+- 2.5.3
+script:
+  - bundle exec jekyll build
+  - bundle exec htmlproofer ./_site --http-status-ignore 999
+branches:
+  only:
+  - master
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - secure: mm2K4puWC6L/TiBUuQQq1c9YFg/lhqJ8DReqzcoBk+IAa1lPUh+ww0Pe4BrcVpvXZiNzFGzTNVk8I1Z+BO7WjASOSaZ5acp64kPlt8ZjGUkGII+tFFbk3dKFu5mZ3d35jV9yKD5jAy9CPmQGmzpy1sYHT1suJJwO9jb3iAbNk2k5I4XHV2Wbyy3E8hGV2OLMViz+jDBzQA+eZS1qPlGJeRG7DCFG0X6RLXesbpYy2OQ6VZbE4jJ4lKGIuHLSHZ6sgBT30oyn03rVde+IR2X73txGhCVda3SkyDSHg26BilfgFShhxwJTsFbSaLMQPY25i9S07GR8PhXUIZuYtKvMzNl3qeDQf/2UrpSchROdUxS8/+ZYiPzJEdhvKSjkqI+bHxkDHUepUjedeVBqL4AwQCOEx3awSJInDwVWYlVykD2MY+2xLUG0+llLcAOioUJNHEgxScW1veOuCC6GEOg6X+AV0i9AjnzcU7yw4zfaQG+kmPmd3bLAhk4zXKEdeH7GR9hFOoWYu0K1k+rSkmtLyfF9oAY2Ad8m1/7rTVF34/6h5IJ9EdcXu89jJVbm0OCquH6WTrCuev4kDJ5CoKjSk06hioEoMuhv8wgnvU6l/K+uHm3F+ou114kBMdIa0fZvfhHsuIsIpenpUhYbH5OUq0hfXc54KCg7XcvhN5XOphI=
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
+sudo: false
+cache: bundler
+notifications:
+  email: false
+deploy:
+  provider: pages
+  target-branch: gh-pages
+  skip_cleanup: true
+  github_token: $JEKYLL_GITHUB_TOKEN
+  keep_history: false
+  on:
+    branch: master
